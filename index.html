@@ -5,6 +5,7 @@
   <title>Redirecting to WhatsApp...</title>
   
   <script>
+    // Pixel code remains the same for tracking
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -15,18 +16,18 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1602207253688186'); // YOUR PIXEL ID
     fbq('track', 'PageView');
-    fbq('track', 'Purchase', {value: 25500.00, currency: 'NGN'}); // This is the purchase event at the NEW price
+    fbq('track', 'Purchase', {value: 25500.00, currency: 'NGN'}); // Purchase event
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1602207253688186&ev=Purchase&noscript=1"
   /></noscript>
-  <!-- THIS IS THE FIRST UPDATED LINE -->
-  <meta http-equiv="refresh" content="0; url=https://wa.link/glowask" />
+  
+  <!-- **CRITICAL FIX: DIRECT WHATSAPP API LINK** -->
+  <!-- URL: https://api.whatsapp.com/send?phone=2348025667925&text=... (message is URL encoded) -->
+  <meta http-equiv="refresh" content="0; url=https://api.whatsapp.com/send?phone=2348025667925&text=%F0%9F%92%A1%20I%20NEED%20ADVICE.%20I%20am%20interested%20in%20the%20%E2%82%A625%2C500%20Glow%20Package.%20Please%20reply%20so%20I%20can%20learn%20more%20about%20it." />
 </head>
 <body>
   <h1>Redirecting to WhatsApp...</h1>
-  <!-- THIS IS THE SECOND UPDATED LINE -->
-  <p>If you are not redirected automatically, <a href="https://wa.link/glowask">click here to continue</a>.</p>
+  <p>If you are not redirected automatically, <a href="https://api.whatsapp.com/send?phone=2348025667925&text=%F0%9F%92%A1%20I%20NEED%20ADVICE.%20I%20am%20interested%20in%20the%20%E2%82%A625%2C500%20Glow%20Package.%20Please%20reply%20so%20I%20can%20learn%20more%20about%20it.">click here to continue</a>.</p>
 </body>
 </html>
-
